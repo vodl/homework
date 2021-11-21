@@ -1,3 +1,6 @@
+/**
+ * @Description: class with bussiness logic regarning account records
+ */
 public with sharing class AccountServices {
 
     public static void manageChildAccounts(List<Account> newAccounts){
@@ -18,5 +21,4 @@ public with sharing class AccountServices {
         child.Name = parent.Name + ' child';
         return child;
     }
-
 }
