@@ -18,8 +18,6 @@ public with sharing class AccountTriggerHandler extends AbstractTriggerHandler i
     }
 
     public override void afterInsert(){
-    }
-
-    public override void afterUpdate(){
+        AccountServices.manageChildAccounts(newList);
     }
 }
